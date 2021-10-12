@@ -5,7 +5,7 @@
  * Creation Date: 17-Jan-2021
  * Tabsize		: 4
  *
- * This Revision: $Id: AvrBattery.h 1232 2021-08-12 13:32:17Z  $
+ * This Revision: $Id: AvrBattery.h 1256 2021-09-28 14:35:36Z  $
  */
 
 /*
@@ -28,7 +28,7 @@
 	#define VCC_MIN 2000L
 #endif
 #ifndef VCC_MAX
-	#define VCC_MAX 3300L
+	#define VCC_MAX 3000L
 #endif
 
 

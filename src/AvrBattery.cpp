@@ -5,7 +5,7 @@
  * Creation Date: 17-Jan-2021
  * Tabsize		: 4
  *
- * This Revision: $Id: AvrBattery.cpp 1232 2021-08-12 13:32:17Z  $
+ * This Revision: $Id: AvrBattery.cpp 1256 2021-09-28 14:35:36Z  $
  *
  * @brief Measure AVR supply voltage, typically a battery
  */
@@ -105,7 +105,7 @@ uint16_t AvrBattery::measureVCC()
  * @brief  calculate VCC in % of useable battery range
  * @param  voltage  VCC in mV 
  * @param  vmin     lower limit of battery range [mV], default 2000 mV
- * @param  vmax     upper limit of battery range [mV], default 3300 mV for Li battery
+ * @param  vmax     upper limit of battery range [mV], default 3000 mV for CR2032 Li battery or 2x 1.5V AAA battery
  * @return  VCC in percent
  */
 uint8_t AvrBattery::calcVCC_Percent(uint16_t voltage, uint16_t vmin, uint16_t vmax)
